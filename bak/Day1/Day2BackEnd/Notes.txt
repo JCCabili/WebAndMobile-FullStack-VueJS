@@ -1,0 +1,60 @@
+Day2 
+Feathers JS.
+Documentation:
+https://docs.feathersjs.com/guides/basics/generator.html
+    CLI generator Feathers CLI
+1.feaInstall the CLI of Feathers Js
+Generator CLI : npm install @feathersjs/cli -g
+2. Check Version
+    feathers --version
+
+3. Create app
+    feathers generate app
+4. Create service
+    feathers generate service
+    NeDB
+    orders
+5.Start application 
+    nmp start
+
+6. wings-feathers. (UI or Front End)
+Documentation:
+https://www.npmjs.com/package/wings-feathers
+    Copy paste on front end.
+    create file on src. dbcon.js paste
+    install the 
+        npm install --save wings-feathers
+    add Main.js
+        import dbCon from 'dbCon'
+        Vue.prototype.$dbCon = dbCon
+     add Shopping.Vue on script
+     // This mount is the one who handles the real time data.
+      mounted () {
+        this.myOrders = this.$dbCon.services.orders.data
+        this.$dbCon.services.orders.onDataChange(data => {
+        this.myOrders = data
+            })
+        },
+
+
+
+7. To be realtime db
+    Need to add Channel on the Server side.
+    Terminologies : Service is equal to table.
+
+    Add on table.service.js
+    service.publish('created', () => app.channel('anonymous', 'authenticated'));
+    service.publish('created', () => app.channel('anonymous', 'authenticated'));
+    service.publish('removed', () => app.channel('anonymous', 'authenticated'));
+    service.publish('patched', () => app.channel('anonymous', 'authenticated'));
+    service.publish('updated', () => app.channel('anonymous', 'authenticated'));
+
+8. Firebase
+    Console> Create Project.
+
+    VueFire
+        https://github.com/vuejs/vuefire
+        On front end only
+        npm install vue firebase vuefire --save 
+
+        Add to the 

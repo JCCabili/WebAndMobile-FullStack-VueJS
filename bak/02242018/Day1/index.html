@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="answer" style="background-color: pink">asd</h1>
+    <input type="number" id="num1" onkeyup="ch()">
+    <input type="number" id="num2" onkeyup="ch()">
+    <script>
+        var num1 = document.querySelector('#num1')
+        var num2 = document.querySelector('#num2')
+        var answerEl = document.querySelector('#answer')
+        num1.value = 1
+        num2.value = 1
+
+        function sum (n1, n2) {
+            answerEl.innerHTML = parseFloat(n1) + parseFloat(n2)
+        }
+
+        sum(num1.value, num2.value)
+
+        function ch () {
+            sum(num1.value, num2.value)
+        }
+    </script>s

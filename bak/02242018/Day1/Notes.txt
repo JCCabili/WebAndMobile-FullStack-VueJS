@@ -1,0 +1,37 @@
+Day 1 2/11/2018
+1.Quasar Framework.
+// nmp install -g quasar-cli
+// quasar init projectname
+// nmp install
+    material design or ios.
+        mat
+        ios
+// Computed - Auto binding functions.
+// Methods - Need to be triggered.
+2. Shooping 
+    Main.js
+        line 14 // import Quasar, * as All from 'quasar'
+        line 18 
+            Vue.use(Quasar, {
+            components: All,
+            directives: All
+            })
+
+    // Icon Material Design.
+    // Chip - is notification.
+    //Modal.
+2. WebPack.
+
+
+Expected.
+Day 2
+Feathers js.
+Firebase.
+Day 3
+Geo Mapping
+Day 4
+hackaton.
+Jarvis
+Speach API.
+
+Codova.
